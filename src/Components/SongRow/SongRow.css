@@ -1,0 +1,70 @@
+.songRow {
+  margin-left: 20px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  z-index: 100;
+  color: white;
+}
+
+.songRow:hover {
+  cursor: pointer;
+  background-color: black;
+  opacity: 0.8;
+}
+
+.songRow__info {
+  margin-left: 20px;
+  margin-right: 22px;
+}
+
+.songRow__info > h1 {
+  font-size: 15px;
+  min-width: 30vw;
+}
+
+.songRow__info > p {
+  font-size: 14px;
+  margin-top: 3px;
+  color: gray;
+}
+.songRow__name {
+  align-items: center;
+  color: gray;
+  /* min-width: 30.5vw; */
+}
+
+/* .songRow__added {
+  color: gray;
+} */
+.songRow > p {
+  margin-right: 15px;
+  color: gray;
+  /* flex: 0.2; */
+  align-self: start;
+  margin-left: -10px;
+}
+.songRow__album {
+  height: 40px;
+  width: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .songRow__name,
+  .songRow__added {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .songRow__name,
+  .songRow__added {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1050px) {
+  .songRow__added {
+    display: none;
+    margin-left: 10px;
+  }
+}
